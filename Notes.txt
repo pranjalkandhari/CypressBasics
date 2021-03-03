@@ -1,0 +1,31 @@
+Tutorial followed: https://www.youtube.com/watch?v=IMx7Ng-T2mw&list=PLzDWIPKHyNmK9NX9_ng2IdrkEr8L4WwB0&index=1
+
+
+
+Lecture 2:
+By doing: npm init -y  To clear package.json: Used to manage project dependencies.
+
+-> To open Cypress destop app(Terminal): npx cypress open
+-> We opened: actions.spec.js : This opened chrome for test runner.
+
+
+
+Lecture 3: Wriitng our !st test
+-> 1st folder: Fixtures: Holds external peices of static data that can be used by our tests.
+-> Integration: All tets files are here
+-> Plugins: index.js :Used to load plugins
+-> Support: index.js: Global Config (Loaded automatically before test files), 
+
+-> We open: http://react-redux.realworld.io/#/login?_k=hhdgnh 
+The above link is on Conduit: a medium clone.
+-> Made our test file in QAM
+-> Made jsconfig.js 
+
+-> Describe: used to hold collection of tests.
+-> It function: single test
+
+-> To run a Cypress test commmand used is: npx cypress open : To open the GUI the run from there.
+
+->Some cypress commmands have built-in assertions:
+    eg: cy.visits(): Expect the page to return a 200 status code.
+
