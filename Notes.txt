@@ -38,3 +38,11 @@ Lecture 7: Code is added in Cypress.json
 Cypress.json contains the configuration like base URl
 -> We can also make default configuration in one file: See TC04
 -> We can also see all the configuration in Settings tab in the Cypress URL
+
+
+Lecture 10:
+To run only one integrated test use it.only(). But hooks (before etc) will always be executed
+We can use it.skip() to skip one.
+
+-> To run a test in Terminal (Headlessly): it uses electron to run:
+npx cypress run -- spec "Path"

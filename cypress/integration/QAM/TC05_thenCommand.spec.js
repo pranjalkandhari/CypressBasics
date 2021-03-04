@@ -34,8 +34,11 @@ describe('login' , function(){
         cy.get(".pull-xs-right").eq(1).first().then( ($fav) => {
             const favCount = parseInt($fav.text());
             //console.log("VALUE OF TEXT IS: " + $fav.text() + "OK");
-            expect(favCount).to.eq(1);
-        }).click();
+            return favCount;
+        }).as('fc'); //Alias has been used here see TC06
+        cy.get('@fc').then( ($ctn) =>{
+            expect($ctn).to.eq(1);
+        })
         cy.reload();
         cy.go('back'); 
     })
