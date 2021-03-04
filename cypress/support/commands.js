@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('SignIn' , () => {
+    cy.visit('https://react-redux.realworld.io/#/login');
+    cy.title().should('eq' , 'Conduit');
+    cy.location('protocol').should('eq' , 'https:');
+    cy.get('form').within(($form) => {
+
+        cy.get('input').first().type("pranjalkandhari@gmail.com");
+        cy.get('input').eq(1).type("samplePass");
+        cy.root().submit();
+    })
+    cy.contains('Your Feed' , {timeout : 10000}).should('be.visible');
+})
