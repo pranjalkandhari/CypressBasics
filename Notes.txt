@@ -29,3 +29,9 @@ The above link is on Conduit: a medium clone.
 ->Some cypress commmands have built-in assertions:
     eg: cy.visits(): Expect the page to return a 200 status code.
 
+
+
+Lecture 6: Code is added in commmands.js
+
+
+Lecture 7: Code is added in Cypress.json

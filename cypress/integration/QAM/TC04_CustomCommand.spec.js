@@ -4,6 +4,8 @@
 /// <reference types = "Cypress" />
 describe('login' , function(){
 
+    Cypress.config('pageLoadTimeout' , 10000); //Sets this to default configuration for this file
+
     //Also Instead of it(integrated test) we can use befor:
     //If before fails no other it will run.
     before(function()
