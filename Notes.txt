@@ -46,3 +46,22 @@ We can use it.skip() to skip one.
 
 -> To run a test in Terminal (Headlessly): it uses electron to run:
 npx cypress run -- spec "Path"
+
+
+
+Lecture 13: Cucumber
+Add the following:
+In index.js (In Support):
+const cucumber= require('cypress-cucumber-preprocessor').default
+
+module.exports = (on , config) => {
+  on('file:preprocessor', cucumber())
+}
+
+In cypress.json:
+"testFiles":"**/*.feature"
+
+In package.json:
+"cypress-cucumber-preprocessor" : {
+    "nonGlobalStepDefinations" : true
+}

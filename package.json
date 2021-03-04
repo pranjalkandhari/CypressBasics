@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/pranjalkandhari/CypressBasics/issues"
   },
-  "homepage": "https://github.com/pranjalkandhari/CypressBasics#readme"
+  "homepage": "https://github.com/pranjalkandhari/CypressBasics#readme",
+  "devDependencies": {
+    "cypress-cucumber-preprocessor": "^4.0.1"
+  },
+
+  "cypress-cucumber-preprocessor" : {
+    "nonGlobalStepDefinations" : true,
+    "step_definitions": "cypress/integration/features/step_definitions/**/"
+  }
 }
