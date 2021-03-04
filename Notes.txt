@@ -35,3 +35,6 @@ Lecture 6: Code is added in commmands.js
 
 
 Lecture 7: Code is added in Cypress.json
+Cypress.json contains the configuration like base URl
+-> We can also make default configuration in one file: See TC04
+-> We can also see all the configuration in Settings tab in the Cypress URL
