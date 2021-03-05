@@ -65,3 +65,9 @@ In package.json:
 "cypress-cucumber-preprocessor" : {
     "nonGlobalStepDefinations" : true
 }
+
+
+
+Lecture 16:
+Added json file in fixtures.
+Used it in TC09 using cy.fixture()
